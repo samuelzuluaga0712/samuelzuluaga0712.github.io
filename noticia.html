@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Zuluaga Guerra - Networker</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to right, #2c3e50, #3498db);
+            color: white;
+            text-align: center;
+            padding: 3em 1em;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.2em;
+        }
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 1em;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.5em;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #f39c12;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2em auto;
+            padding: 0 1em;
+        }
+        section {
+            margin-bottom: 3em;
+            background: white;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s forwards;
+        }
+        section:nth-child(1) { animation-delay: 0.2s; }
+        section:nth-child(2) { animation-delay: 0.4s; }
+        section:nth-child(3) { animation-delay: 0.6s; }
+        section:nth-child(4) { animation-delay: 0.8s; }
+        section:nth-child(5) { animation-delay: 1.0s; }
+        section:nth-child(6) { animation-delay: 1.2s; }
+        @keyframes fadeInUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
+        section h2 {
+            color: #2c3e50;
+            font-size: 1.8em;
+            margin-bottom: 0.5em;
+            border-bottom: 2px solid #f39c12;
+            display: inline-block;
+        }
+        section p, section li {
+            font-size: 1.1em;
+            margin-bottom: 0.8em;
+        }
+        .profile-pic {
+            display: block;
+            margin: 0 auto 1em;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #3498db;
+        }
+        .news-article {
+            background-color: #f9f9f9;
+            border-left: 4px solid #3498db;
+            padding: 1.5em;
+            font-style: italic;
+            color: #555;
+        }
+        .news-article h3 {
+            color: #2c3e50;
+            font-size: 1.4em;
+            margin-bottom: 0.5em;
+        }
+        .social-links a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 1em;
+            transition: transform 0.3s, color 0.3s;
+        }
+        .social-links a:hover {
+            color: #f39c12;
+            transform: scale(1.2);
+        }
+        .contact-button {
+            display: inline-block;
+            padding: 0.8em 1.5em;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin-top: 1em;
+        }
+        .contact-button:hover {
+            background-color: #f39c12;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            nav a {
+                display: block;
+                margin: 0.5em 0;
+            }
+            .profile-pic {
+                width: 120px;
+                height: 120px;
+            }
+            .contact-button {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Samuel Zuluaga Guerra</h1>
+        <p>Networker Más Joven | Líder Inspirador</p>
+    </header>
+    <nav>
+        <a href="#sobre-mi">Sobre Mí</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#logros">Logros</a>
+        <a href="#noticia">Noticia</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="container">
+        <section id="sobre-mi">
+            <h2>Sobre Mí</h2>
+            <img src="samuel.jpg" alt="Foto de Samuel Zuluaga Guerra" class="profile-pic">
+            <p>Soy Samuel Zuluaga Guerra, nacido el 12 de julio de 2011. Desde pequeño he tenido aires de grandeza y una pasión por conectar con los demás. Crecí como hijo único en una familia extensa, pero a los 9 años recibí la increíble noticia de que sería hermano mayor de Emiliano, mi mayor motivación para ser mejor cada día y darle un gran ejemplo.</p>
+        </section>
+        <section id="experiencia">
+            <h2>Experiencia</h2>
+            <p>Con tan solo 3 meses en el mundo del networking (desde el 18 de febrero de 2025), me he convertido en el networker más joven, llevando mi pasión por conectar personas a otro nivel.</p>
+        </section>
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Liderazgo</li>
+                <li>Comunicación</li>
+                <li>Empatía</li>
+            </ul>
+        </section>
+        <section id="logros">
+            <h2>Logros</h2>
+            <p>Junto con mi equipo, he organizado eventos y actividades que han reunido a más de 200 personas, creando conexiones valiosas y dejando una marca en el mundo del networking.</p>
+        </section>
+        <section id="noticia">
+            <h2>En las Noticias</h2>
+            <div class="news-article">
+                <h3>Samuel Zuluaga Guerra: El Networker Más Joven que Está Revolucionando las Conexiones</h3>
+                <p>14 de mayo de 2025 - A sus 13 años, Samuel Zuluaga Guerra se ha convertido en un nombre que resuena entre los jóvenes que buscan inspiración. Con solo tres meses de experiencia en el mundo del networking, iniciada el 18 de febrero de este año, Samuel ya ha hecho historia al ser reconocido como el networker más joven en su campo. Pero, ¿quién es este joven que ha logrado tanto en tan poco tiempo?</p>
+                <p>Nacido el 12 de julio de 2011, Samuel creció en una familia extensa como hijo único, soñando con grandes cosas desde pequeño. Su vida dio un giro especial a los 9 años cuando recibió la noticia que cambiaría su mundo: iba a ser hermano mayor. La llegada de Emiliano, su hermano pequeño, se convirtió en su mayor motivación. "Quiero ser un ejemplo para él, mostrarle que con esfuerzo y pasión se puede llegar lejos", dice Samuel con una sonrisa.</p>
+                <p>Con habilidades sobresalientes en liderazgo, comunicación y empatía, Samuel ha sabido conectar con personas de todas las edades. En tan solo tres meses, ha liderado junto a su equipo la organización de eventos que han reunido a más de 200 personas, creando redes de apoyo y oportunidades para jóvenes como él. "El networking no es solo conectar personas, es crear comunidades donde todos puedan crecer", explica.</p>
+                <p>Samuel no solo inspira con sus logros, sino también con su historia personal. Su pasión por ser un buen hermano mayor y su dedicación al networking lo han convertido en un modelo a seguir para los jóvenes que buscan dejar su huella. ¿Qué sigue para este joven talento? Según él, "esto es solo el comienzo". Samuel planea seguir expandiendo su red y motivando a otros a perseguir sus sueños, demostrando que la edad es solo un número cuando se tiene determinación.</p>
+            </div>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>¡Conéctate conmigo!</p>
+            <a href="https://wa.me/+573137950088" class="contact-button">Escríbeme por WhatsApp</a>
+            <p>Sígueme en redes sociales: <a href="https://www.instagram.com/samuel_zuluaga0712" class="social-links">@samuel_zuluaga0712</a></p>
+        </section>
+    </div>
+    <footer>
+        <p>© 2025 Samuel Zuluaga Guerra. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
